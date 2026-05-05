@@ -1,1 +1,227 @@
-This is where the privacy policy goes.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeReady | Precision TCG Manual Grading Tools</title>
+    <!-- Professional Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --midnight-slate: #1E2424;
+            --brushed-gold: #D4AF37;
+            --card-grey: #2C3333;
+            --text-white: #FFFFFF;
+            --text-grey: #A0A0A0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--midnight-slate);
+            color: var(--text-white);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 3px solid rgba(212, 175, 55, 0.1);
+        }
+
+        h1 {
+            font-size: clamp(32px, 8vw, 64px);
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .brand-gold { color: var(--brushed-gold); }
+        .brand-white { color: var(--text-white); }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-grey);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        /* App Mockup Simulation */
+        .mockup-container {
+            max-width: 280px;
+            margin: 0 auto;
+            border: 8px solid #111;
+            border-radius: 40px;
+            height: 560px;
+            background-color: #000;
+            box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Replace logo.png with your actual logo image path if you have one */
+        .mockup-container::after {
+            content: "GRADE\READY";
+            font-weight: 900;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: var(--brushed-gold);
+            text-align: center;
+        }
+
+        /* Feature Section */
+        .features {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--card-grey);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--brushed-gold);
+        }
+
+        .feature-card h3 {
+            color: var(--brushed-gold);
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .feature-card p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Store Badges */
+        .download-badges {
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge-placeholder {
+            background: #111;
+            padding: 12px 30px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 200px;
+        }
+
+        .badge-placeholder span {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Privacy Banner */
+        .privacy-highlight {
+            background-color: rgba(212, 175, 55, 0.05);
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-grey);
+        }
+
+        footer nav {
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: var(--brushed-gold);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1><span class="brand-gold">GRADE</span><span class="brand-white">READY</span></h1>
+        <p>A specialized toolkit designed for hobbyists. Align guidelines, inspect surfaces, and verify centering with manual precision.</p>
+        
+        <div class="mockup-container">
+            <!-- App Screen simulation -->
+        </div>
+
+        <div class="download-badges">
+            <a href="#" class="badge-placeholder">
+                Coming soon to the<br><span>Apple App Store</span>
+            </a>
+            <a href="#" class="badge-placeholder">
+                Coming soon to the<br><span>Google Play Store</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Manual Centering</h3>
+            <p>Perform precise ratio analysis on card borders. Drag guidelines manually for a custom analysis that fits any TCG set.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Whitening Scan</h3>
+            <p>Utilize the specialized Logic Scan filter to highlight surface edge wear and surface damage across high-contrast color spaces.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Corner Radius</h3>
+            <p>Manually align dynamic radius templates to check for symmetry and cut quality across all four card corners.</p>
+        </div>
+    </section>
+
+    <section class="privacy-highlight">
+        <h3 class="brand-gold">100% LOCAL. 100% PRIVATE.</h3>
+        <p style="max-width: 700px; margin: 20px auto;">GradeReady does not upload your photos to our servers. Every logic scan, centering measurement, and alignment happens directly on your device hardware.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:support@zap2holdings.com">Contact Support</a>
+        </nav>
+        <p>&copy; 2026 Zap2 Holdings LLC. All Rights Reserved.</p>
+        <p style="margin-top: 10px; font-size: 11px; opacity: 0.5;">PSA, BGS, SGC, and CGC are trademarks of their respective owners. GradeReady is not affiliated with official grading companies.</p>
+    </footer>
+
+</body>
+</html>
